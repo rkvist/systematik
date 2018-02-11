@@ -1,4 +1,37 @@
-baseURL = "http://example.org/"
+baseURL = "http://www.rasmuskvist.dk/kea/systematik/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "mytheme"
+
+
+
+
+[[menu.main]]
+name                   = "Home"
+weight                 = 1
+identifier             = "home"
+url                    = "/"
+
+[[menu.main]]
+name                   = "about"
+weight                 = 2
+identifier             = "about"
+url                    = "/about/"
+
+[[menu.main]]
+name                   = "Documentation"
+weight                 = 3
+identifier             = "dokumentation"
+url                    = "/dokumentation/"
+
+[[menu.main]]
+name                   = "Students"
+weight                 = 4
+identifier             = "datavisualisering"
+url                    = "/datavisualisering/"
+
+[[menu.main]]
+name                   = "contact"
+weight                 = 5
+identifier             = "contact"
+url                    = "/contact/"

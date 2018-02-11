@@ -19,3 +19,9 @@ min_version = "0.34"
   name = ""
   homepage = ""
   repo = ""
+
+[[menu.main]]
+name                   = "about"
+weight                 = 4
+identifier             = "about"
+url                    = "/about/"

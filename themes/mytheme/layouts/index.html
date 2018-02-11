@@ -1,1 +1,32 @@
-{{ partial "header.html" . }}
+ {{ partial "header.html" . }}
+
+<div class="loadingfullsize" id="loadingscreen">
+    <div class="loading">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80px" height="60px" viewBox="5 0 80 60">
+        <path id="wave" 
+            fill="none" 
+            stroke="#A5668B" 
+            stroke-width="4"
+            stroke-linecap="round">
+        </path>
+      </svg>
+
+    </div>
+    <h4>Loading...</h4>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12  col-md-12  col-lg-12 btnsection">
+        <button class="btn ">Download</button>
+        <button class="btn ">Github</button>
+    </div>
+    <div class="col-xs-12  col-sm-6  col-md-6  col-lg-6">
+        <p>{{ .Content }}</p>
+    </div>
+    <div class="col-xs-12  col-sm-6  col-md-6  col-lg-6">
+        <p>{{ .Content }}</p>
+    </div>
+
+
+
+    {{ partial "footer.html" . }}

@@ -6,8 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{.Site.BaseURL}}css/normalize.css">
     <link rel="stylesheet" href="{{.Site.BaseURL}}css/style.css">
-    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/flexboxgrid.css">
+    <link rel="stylesheet" href="{{.Site.BaseURL}}css/loading.css">
+
+
+    <link href="https://fonts.googleapis.com/css?
+    family=Encode+Sans+Expanded:300,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+    <title>HugoSite 3 // {{.Title}}</title>
 </head>
 
 <body>
-    {{.Title}} {{.Content}}
+
+    <div class="overlay-navigation">
+        <nav role="navigation">
+            <ul>
+                {{ range .Site.Menus.main }}
+                <li class="nav-{{ .Identifier }}"><a href="{{ .URL | absLangURL }}">{{ .Pre }}<span>{{ .Name }}</span></a></li>
+                {{ end }}
+
+            </ul>
+        </nav>
+    </div>
+
+    <section class="home">
+        <div class="logo_header">
+            <a href="{{.Site.BaseURL}}">
+            <img src="{{.Site.BaseURL}}img/r_logo_neg.png">
+            </a> </div>
+        <div class="open-overlay">
+            <span class="bar-top"></span>
+            <span class="bar-middle"></span>
+            <span class="bar-bottom"></span>
+        </div>
+        <div>
+            <h1>{{ .Title }}</h1>
+        </div>
+    </section>
+    <section class="wrapper">
