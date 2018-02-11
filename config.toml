@@ -2,6 +2,7 @@ baseURL = "http://www.rasmuskvist.dk/kea/systematik/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "mytheme"
+publishDir = "docs"
 
 
 
